@@ -2,7 +2,7 @@
 # Machine-Learning | Aprendizaje de Máquina
 ### PROFESOR: Carlos Fernando Esponda Darlington
 ### EMAIL: fernando.esponda@itam.mx
-### URL: ***
+### URL: https://classroom.google.com/u/0/h
 
 
 ## OBJETIVO:
