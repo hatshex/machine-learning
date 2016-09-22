@@ -18,3 +18,4 @@
 * Proyectos y presentaciones (30%)
 ## REFERENCIAS:
 
+[Stanford CS229  Machine Learning Spring 2016 ](http://cs229.stanford.edu/materials.html)
