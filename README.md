@@ -16,6 +16,7 @@
 * 2 exámenes (20% c/u)
 * Ejercicios en clase (30%)
 * Proyectos y presentaciones (30%)
-## REFERENCIAS:
 
+
+## REFERENCIAS:
 [Stanford CS229  Machine Learning Spring 2016 ](http://cs229.stanford.edu/materials.html)
