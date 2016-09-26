@@ -30,3 +30,4 @@
 * [Learn Machine Learning Using These Online Courses](https://www.springboard.com/blog/machine-learning-online-courses/)
 * [University at Buffalo Introduction to Machine Learning Course](http://www.cedar.buffalo.edu/~srihari/CSE574/)
 * [Machine Learning Summer School 2014 in Pittsburgh](http://www.mlss2014.com/),[videos](https://www.youtube.com/watch?v=4myTpLua0EM&list=PLZSO_6-bSqHQCIYxE3ycGLXHMjK3XV7Iz)
+* [University of Oxford Machine Learning](https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/)
