@@ -99,7 +99,8 @@ Dependido de si tenemos disponible el valor de la función objetivo para los eje
 ## Lo que hay que hacer, tu checklist
 ![Proceso](images/proceso.png)
 
-## Conceptos Probabilísticos
+## Predicción Probabilística
+### Modelos predictivos basados en probabilidades
  * Estimar frecuencias
  * Calcular probabilidades
  * Usar regla de Bayes
