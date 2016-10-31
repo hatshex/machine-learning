@@ -1,6 +1,12 @@
 # Introducción al Aprendizaje de máquina o Machine Learning
-## 1.- ¿Qué es?
 
+## ¿Para qué hacer que una computadora aprenda?
+  * Buscamos entender (relaciones, similitudes, diferencias, invariantes), buscamos predecir
+  * Buscamos modelar un fenómeno sin tener el conocimiento explícito del proceso subyacente
+
+Al aprendizaje de máquina consiste de varias técnicas (familias de funciones) para aproximar el proceso que genera lo observado
+
+## ¿Qué es?
   1. **_*Tom Michell*_** - Se dice que un programa de computadora aprende de su experiencia *E* con respecto a una tarea *T* y función de evaluación *F*, si su desempeño en la tarea T (con respecto a la evaluación F) mejora con la experiencia E
   2. **_*Tom Michell*_** - Un programa de computadora se dice que aprende de la experiencia E con respecto a alguna clase de tareas T y P medida de rendimiento, si su desempeño en tareas en T, medido por P, mejora con la experiencia E
   3. **_*Arthur Samuel*_** - El campo de estudio que da a las computadoras la capacidad de aprender sin ser programada de forma explícita
@@ -9,12 +15,23 @@ En general un problema de aprendizaje debe precisar:
   * La clase de tareas a las que se refiere
   * La función de evaluación 
   * La fuente de experiencia
-  
-## 2.- Tipos
-  * Aprendizaje Supervisado
-  * Aprendizaje No Supervisado
 
-## 3.- Minado de datos
+Ya definido esto podemos seleccionar un modelo (_*función objetivo*_) y ajustarlo para maximizar su desempeño 
+
+## Tipos de problemas
+Lo que queremos aprender es una función que dado un ejemplo (un dato) nos entregue un valor
+  * Si el valor es numérico se conoce como regresión: El valor de una acción
+  * Si el valor es categórico se conoce como clasificación: Si un día es bueno o no para jugar tenis
+
+## Tipos de técnicas
+Dependido de si tenemos disponible el valor de la función objetivo para los ejemplos de entrenamiento, las tareas de aprendizaje se dividen en:
+  * **Aprendizaje Supervisado**: Se utilizan los datos de entrenamiento y el valor correcto para cada uno de ellos de la función objetivo (la función que intentamos aprender)
+    - Árboles de decisión, redes neuronales
+  * **Aprendizaje No-supervisado: ** Sólo se le presentan datos, se desconoce el valor objetivo de los ejemplos de entrenamiento
+    - Técnicas de agrupamiento (“clustering”)
+    - K-medias, EM, redes neuronales
+    
+## Minado de datos
 #### Etapas
   * Limpieza
     - Remover datos ruidosos, inconsistentes, etc.
