@@ -110,9 +110,22 @@ Dependido de si tenemos disponible el valor de la función objetivo para los eje
 
 ## Predicción Probabilística
 ### Modelos predictivos basados en probabilidades
+Son efectibos en una gran cantidad de casos.
+  * **Tipo de método:** Supervisado
+  * **Supuestos:** Ejemplos de entrenamiento son representativos
+  * Los datos provienen de un proceso que no es totalmente conocido Nosotros lo modelamos como un **proceso estocástico**
+     + Por ejemplo: los datos son resultados de volados, los datos son precios de una acción
+   * Gracias a que no tenemos toda la información necesaria para descubrir el proceso determinista que lo rige, definimos una variable aleatoria X que pude tomar distintos valores
+    + Águila o Sol en el caso de los volados
+    + Un número real positivo para las acciones  
+  * Deseamos encontrar la probabilidad P(X=valor)
+  * En el caso de los volados supongamos que P(X=aguila) =po
+    + ¿Qué en P(X=sol)?
+
  * Estimar frecuencias
  * Calcular probabilidades
  * Usar regla de Bayes
+
 
 ### Ejercicios - Casos Contraintuitivos de la Probabilidad
  * **Película "Rosencrantz y Guildenstern han muerto"**
