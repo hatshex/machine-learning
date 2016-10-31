@@ -19,9 +19,18 @@ El aprendizaje de máquina consiste de varias técnicas (familias de funciones) 
   2. **_*Arthur Samuel*_** - El campo de estudio que da a las computadoras la capacidad de aprender sin ser programada de forma explícita
   
 En general un problema de aprendizaje debe precisar:
-  * La clase de tareas a las que se refiere
-  * La función de evaluación 
-  * La fuente de experiencia
+  * La clase de tareas a las que se refiere **T**
+  * La función de evaluación  **F**
+  * La fuente de experiencia **E**
+  * Ejemplo:
+   - Encontrar la tendencia de una acción:
+     + **Tarea** Predecir el precio futuro de una acción
+     + **F.e** Ganancias
+     + **Experiencia** Movimientos históricos de un año
+   - Predecir si un día es bueno para jugar tenis
+     + **Tarea** Clasificar días como buenos o malos para jugar tenis
+     + **F.e** Porcentaje de días bien clasificados y porcentaje de días mal clasificados
+     + **Experiencia** Historia de un mes
 
 Ya definido esto podemos seleccionar un modelo (_*función objetivo*_) y ajustarlo para maximizar su desempeño 
 
