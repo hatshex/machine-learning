@@ -27,7 +27,7 @@ Lo que queremos aprender es una función que dado un ejemplo (un dato) nos entre
 Dependido de si tenemos disponible el valor de la función objetivo para los ejemplos de entrenamiento, las tareas de aprendizaje se dividen en:
   * **Aprendizaje Supervisado**: Se utilizan los datos de entrenamiento y el valor correcto para cada uno de ellos de la función objetivo (la función que intentamos aprender)
     - Árboles de decisión, redes neuronales
-  * **Aprendizaje No-supervisado: ** Sólo se le presentan datos, se desconoce el valor objetivo de los ejemplos de entrenamiento
+  * **Aprendizaje No-supervisado**: Sólo se le presentan datos, se desconoce el valor objetivo de los ejemplos de entrenamiento
     - Técnicas de agrupamiento (“clustering”)
     - K-medias, EM, redes neuronales
     
