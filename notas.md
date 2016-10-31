@@ -25,7 +25,7 @@ Lo que queremos aprender es una función que dado un ejemplo (un dato) nos entre
 
 ## Tipos de técnicas
 Dependido de si tenemos disponible el valor de la función objetivo para los ejemplos de entrenamiento, las tareas de aprendizaje se dividen en:
-  * **Aprendizaje Supervisado**: Se utilizan los datos de entrenamiento y el valor correcto para cada uno de ellos de la función objetivo (la función que intentamos aprender)
+  * **Aprendizaje Supervisado**: Se utilizan los datos de entrenamiento y el valor correcto para cada uno de ellos de la función objetivo (la función que intentamos aprender). Le damos al algoritmo un conjunto de datos con la respuesta correcta, lo que hacemos es predecir o generar nuevas respuestas.
     - Árboles de decisión, redes neuronales
   * **Aprendizaje No-supervisado**: Sólo se le presentan datos, se desconoce el valor objetivo de los ejemplos de entrenamiento
     - Técnicas de agrupamiento (“clustering”)
@@ -89,6 +89,10 @@ Dependido de si tenemos disponible el valor de la función objetivo para los eje
 
 **_*Nota:*_** el proceso no es necesariamente lineal pues en ocasiones es necesario regresar a etapas anteriores
 
+## Lo que hay que hacer
+![Proceso](images/proceso.png)
+
+## Procedimiento ideal para seleccionar un modelo
 ![Proceso](tareas/images/NaivesBayesContinous.png)
 
 [**  Video Humans Need Not Apply](https://www.youtube.com/watch?v=7Pq-S557XQU)
