@@ -96,7 +96,7 @@ Dependido de si tenemos disponible el valor de la función objetivo para los eje
 
 **_*Nota:*_** el proceso no es necesariamente lineal pues en ocasiones es necesario regresar a etapas anteriores
 
-## Lo que hay que hacer, tu checklist
+### Lo que hay que hacer, tu checklist
 ![Proceso](images/proceso.png)
 
 ## Predicción Probabilística
@@ -105,7 +105,7 @@ Dependido de si tenemos disponible el valor de la función objetivo para los eje
  * Calcular probabilidades
  * Usar regla de Bayes
 
-## Ejercicios - Casos Contraintuitivos de la Probabilidad
+### Ejercicios - Casos Contraintuitivos de la Probabilidad
  * **Película "Rosencrantz y Guildenstern han muerto"**
   - En la escena que abre la película, Rosencrantz va lanzando monedas al aire.
   - Si sale cara, la pierde y se la lleva Guildenstern; de lo contrario, se supone que recibe una moneda de Guildenstern.
