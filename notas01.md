@@ -99,9 +99,6 @@ Dependido de si tenemos disponible el valor de la función objetivo para los eje
 ## Lo que hay que hacer, tu checklist
 ![Proceso](images/proceso.png)
 
-## Procedimiento ideal para generar un modelo
-![Proceso](tareas/images/NaivesBayesContinous.png)
-
 ## Material adicional
  * [Video Humans Need Not Apply](https://www.youtube.com/watch?v=7Pq-S557XQU)
  * [Imitation Game de Alan Turing](https://github.com/hatshex/machine-learning/blob/master/art%C3%ADculos/01%20Imitation-game%20-%20translate.pdf)
