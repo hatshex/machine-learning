@@ -4,7 +4,7 @@
   * Buscamos entender (relaciones, similitudes, diferencias, invariantes), buscamos predecir
   * Buscamos modelar un fenómeno sin tener el conocimiento explícito del proceso subyacente
 
-Al aprendizaje de máquina consiste de varias técnicas (familias de funciones) para aproximar el proceso que genera lo observado
+El aprendizaje de máquina consiste de varias técnicas (familias de funciones) para aproximar el proceso que genera lo observado
 
 ## ¿Donde y para que se puede usar el aprendizaje automático? 
 [Does Machine Learning Really Work? Tom Mitchell. AI Magazine 1997](http://www.aaai.org/ojs/index.php/aimagazine/article/view/1303/1204)
