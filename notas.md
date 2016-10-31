@@ -89,4 +89,6 @@ Dependido de si tenemos disponible el valor de la función objetivo para los eje
 
 **_*Nota:*_** el proceso no es necesariamente lineal pues en ocasiones es necesario regresar a etapas anteriores
 
- [**  Video Humans Need Not Apply](https://www.youtube.com/watch?v=7Pq-S557XQU)
+![Proceso](images/NaivesBayesContinous.png)
+
+[**  Video Humans Need Not Apply](https://www.youtube.com/watch?v=7Pq-S557XQU)
