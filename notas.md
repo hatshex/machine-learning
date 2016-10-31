@@ -13,9 +13,9 @@ El aprendizaje de máquina consiste de varias técnicas (familias de funciones) 
  * Minería de datos/Descubrimiento de conocimiento (análisis de datos inteligente)
 
 ## ¿Qué es?
-  1. **_*Tom Michell*_** - Se dice que un programa de computadora aprende de su experiencia *E* con respecto a una tarea *T* y función de evaluación *F*, si su desempeño en la tarea T (con respecto a la evaluación F) mejora con la experiencia E
-  2. **_*Tom Michell*_** - Estudio de algoritmos que mejoran su rendimiento P en alguna tarea T con experiencia E.
-  tarea de aprendizaje: **< P, T, E >**
+  1. **_*Tom Michell*_**
+  - Se dice que un programa de computadora aprende de su experiencia *E* con respecto a una tarea *T* y función de evaluación *F*, si su desempeño en la tarea T (con respecto a la evaluación F) mejora con la experiencia E
+  - Estudio de algoritmos que mejoran su rendimiento **P** <br>en alguna tarea **T** <br>con experiencia **E** <br>tarea de aprendizaje: **< P, T, E >**
   3. **_*Arthur Samuel*_** - El campo de estudio que da a las computadoras la capacidad de aprender sin ser programada de forma explícita
   
 En general un problema de aprendizaje debe precisar:
