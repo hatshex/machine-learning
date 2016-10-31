@@ -145,15 +145,24 @@ Son efectibvs en una gran cantidad de casos.
      - Donde C puede ser alto o bajo riesgo y X1 es el valor del ingreso mensual y X2 el saldo actual 
      - De esta manera podemos definir que un cliente es de alto riesgo si P(C=alto|ingreso_cliente, saldo_cliente)>=0.2
      - En este caso es la probabilidad de que el cliente sea de alto riesgo dado que ya observamos su ingreso y saldo P(C|X1,X2) es la probabilidad posterior
-     |Ingreso|Saldo|Clase|
-     |---|---|---|
-     |20|10|alto|
-     |30|40|bajo|
-     |30|10|alto|
-     |10|30|bajo|
-     |20|10|alto|
-     |20|10|bajo|
-     |20|05|alto|
+
+|Ingreso|Saldo|Clase|
+|---|---|---|
+|20|10|alto|
+|30|40|bajo|
+|30|10|alto|
+|10|30|bajo|
+|20|10|alto|
+|20|10|bajo|
+|20|05|alto|
+     
+Queremos predecir
+
+|Ingreso|Saldo|Clase|
+|---|---|---|
+|20|10|?|
+|30|40|?|
+|20|05|?|
 
 ### Ejercicios - Casos Contraintuitivos de la Probabilidad
  * **Película "Rosencrantz y Guildenstern han muerto"**
