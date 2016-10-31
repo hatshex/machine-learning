@@ -99,6 +99,34 @@ Dependido de si tenemos disponible el valor de la función objetivo para los eje
 ## Lo que hay que hacer, tu checklist
 ![Proceso](images/proceso.png)
 
+## Conceptos Probabilísticos
+ * Estimar frecuencias
+ * Calcular probabilidades
+ * Usar regla de Bayes
+
+## Ejercicios
+ * Película "Rosencrantz y Guildenstern han muerto" - Casos Contraintuitivos de la Probabilidad
+  - En la escena que abre la película, Rosencrantz va lanzando monedas al aire.
+  - Si sale cara, la pierde y se la lleva Guildenstern; de lo contrario, se supone que recibe una moneda de Guildenstern.
+  - Lleva lanzadas noventa y una. Todas han salido cara (y, por tanto, se las ha llevado Guildenstern).
+ - A la próxima vez, la probabilidad de cruz es mayor, ¿no? **Pues, de hecho. . . ¡no!**
+ - **_*¡Son eventos independientes!*_**
+
+* La paradoja de Monty Hall (Catafixia de Chabelo)
+  - Se supone que todos los participantes en el juego conocen las reglas.
+  - Detrás de una de las tres puertas está el coche; tú eliges una puerta.
+  - Chabelo abre una puerta distinta de la elegida, y te muestra que el coche no está tras ella.
+  - Y te pregunta: ¿seguro que no quieres cambiar?
+  - ¿Es mejor cambiar? ¿es mejor mantener la elección? ¿da igual?
+  - ¡Para que el problema esté bien planteado hemos de acordar qué significa "mejor"!
+
+ * La paradoja de Simpson
+  - Supongamos que las encuestas nos dicen:
+   + En la provincia de C´aceres, los vegetarianos son menos propensos a tener ojeras que los no vegetarianos;
+   + Y que en la provincia de Badajoz, los vegetarianos también son menos propensos a tener ojeras que los no vegetarianos.
+   + Podemos deducir que esa correlaci´on se da en toda Extremadura,¿no?
+   + **_*¡Error!*_** Es posible que, en la población conjunta, la ratio vaya a la inversa.
+ 
 ## Material adicional
  * [Video Humans Need Not Apply](https://www.youtube.com/watch?v=7Pq-S557XQU)
  * [Imitation Game de Alan Turing](https://github.com/hatshex/machine-learning/blob/master/art%C3%ADculos/01%20Imitation-game%20-%20translate.pdf)
