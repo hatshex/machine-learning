@@ -98,7 +98,10 @@ Dependido de si tenemos disponible el valor de la función objetivo para los eje
 ## Lo que hay que hacer
 ![Proceso](images/proceso.png)
 
-## Procedimiento ideal para seleccionar un modelo
+## Procedimiento ideal para generar un modelo
 ![Proceso](tareas/images/NaivesBayesContinous.png)
 
-[**  Video Humans Need Not Apply](https://www.youtube.com/watch?v=7Pq-S557XQU)
+## Material adicional
+ * [**  Video Humans Need Not Apply](https://www.youtube.com/watch?v=7Pq-S557XQU)
+ * [Imitation Game de Alan Turing](https://github.com/hatshex/machine-learning/blob/master/art%C3%ADculos/01%20Imitation-game%20-%20translate.pdf)
+ * [Funes el memorioso de José Luis Borges](https://github.com/hatshex/machine-learning/blob/master/art%C3%ADculos/01%20Funes%20el%20memorioso.pdf)
