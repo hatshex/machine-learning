@@ -6,6 +6,12 @@
 
 Al aprendizaje de máquina consiste de varias técnicas (familias de funciones) para aproximar el proceso que genera lo observado
 
+## ¿Donde y para que se puede usar el aprendizaje automático? 
+[Does Machine Learning Really Work? Tom Mitchell. AI Magazine 1997](http://www.aaai.org/ojs/index.php/aimagazine/article/view/1303/1204)
+ * Tareas difíciles de programar (adquisición de conocimiento, reconocimiento de caras, voz, ...)
+ * Aplicaciones auto adaptables (interfaces inteligentes, spam filters,sistemas recomendadores, ...)
+ * Minería de datos/Descubrimiento de conocimiento (análisis de datos inteligente)
+
 ## ¿Qué es?
   1. **_*Tom Michell*_** - Se dice que un programa de computadora aprende de su experiencia *E* con respecto a una tarea *T* y función de evaluación *F*, si su desempeño en la tarea T (con respecto a la evaluación F) mejora con la experiencia E
   2. **_*Tom Michell*_** - Un programa de computadora se dice que aprende de la experiencia E con respecto a alguna clase de tareas T y P medida de rendimiento, si su desempeño en tareas en T, medido por P, mejora con la experiencia E
