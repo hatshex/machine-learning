@@ -6,7 +6,7 @@
   
 ## Predicción Probabilística
 ### Modelos predictivos basados en probabilidades
-Son efectibvs en una gran cantidad de casos.
+Son efectivoss en una gran cantidad de casos.
   * **Tipo de método:** Supervisado
   * **Supuestos:** Ejemplos de entrenamiento son representativos
   * Los datos provienen de un proceso que no es totalmente conocido
@@ -26,7 +26,7 @@ Son efectibvs en una gran cantidad de casos.
  * Calcular probabilidades
  * Usar regla de Bayes
 
-## Bayes
+## Teorema de Bayes
  + Para calcular arg maxC {Pr(C|A1 . . .An)}: repasamos la regla de Bayes y la aplicamos,
    - Pr(C|A1 . . .An) = Pr(A1 . . .An|C) ∗ Pr(C)/Pr(A1 . . .An)
    - El divisor es el mismo para todos los valores de C, por lo cual para encontrar el valor de C que maximiza la probabilidad podemos prescindir de la división.
@@ -64,9 +64,9 @@ Queremos predecir
 
   * P(C | Ingreso, Saldo) = P( C )*P(Ingreso,Saldo|C) / P(Ingreso,Saldo)
   * N = 7
-  * 1 Probabilidad de la clase
+  * Paso 1 - Obtener la Probabilidad de la clase
     + Pr(C=alto)= 4/7 y Pr(C=bajo)= 3/7, la suma debe ser 1.
-  * 2 Probabilidad de las variables, dada la clase.
+  * Paso 2 - Obtener la Probabilidad de las variables, dada la clase.
     + Ingreso=20,Saldo=10:
       - Pr(Ingreso=20,Saldo=10|c=alto)=2/4
       - Pr(X1=20,X2=10|C=bajo)= 1/4
@@ -76,20 +76,20 @@ Queremos predecir
     + Ingreso=20,Saldo=5:
       - Pr(Ingreso=20,Saldo=5|c=alto)=1/4
       - Pr(Ingreso=20,Saldo=5|C=bajo)= 0/3
-  * 3 Probabilidad total
+  * Paso 3 - Obtener la Probabilidad total
     + Pr(Ingreso=20, Saldo|C=alto=10) + Pr(Ingreso=20, Saldo=10|C=bajo)=(4/7)(2/4) + (3/7)(1/3) = 0.428571429
     + Pr(Ingreso=30, Saldo|C=alto=40) + Pr(Ingreso=30, Saldo=40|C=bajo)=(4/7)(0) + (3/7)(1/3) = 0.142857143
     + Pr(Ingreso=20, Saldo|C=alto=5) + Pr(Ingreso=20, Saldo=5|C=bajo)=(4/7)(1/4) + (3/7)(0) = 0.142857143
     
-  * Aplicando la fórmula P(C | Ingreso, Saldo) = P( C )*P(Ingreso,Saldo|C) / P(Ingreso,Saldo)
+  * Paso 4 - Aplicando la fórmula P(C | Ingreso, Saldo) = P( C )*P(Ingreso,Saldo|C) / P(Ingreso,Saldo), seleccionamos el argumento máximo para cada caso.
     + Ingreso=20,Saldo=10:
-      - P(C=alto|Ingreso=20, Saldo=10) = (4/7)(2/4)/(4/7)(2/4)+(3/7)(1/3)= **0.666666667**
+      - ** P(C=alto|Ingreso=20, Saldo=10) = (4/7)(2/4)/(4/7)(2/4)+(3/7)(1/3)= 0.666666667**
       - P(C=bajo|Ingreso=20, Saldo=10) = (3/7)(1/3)/(4/7)(2/4)+(3/7)(1/3)= 0.333333333
     + Ingreso=30,Saldo=40:
       - P(C=alto|Ingreso=30, Saldo=40) = (4/7)(0/4)/(4/7)(0/4)+(3/7)(1/3)= 0
-      - P(C=bajo|Ingreso=30, Saldo=40) = (3/7)(1/3)/(4/7)(0/4)+(3/7)(1/3)= **1**
+      - ** P(C=bajo|Ingreso=30, Saldo=40) = (3/7)(1/3)/(4/7)(0/4)+(3/7)(1/3)= 1**
     + Ingreso=20,Saldo=5:
-      - P(C=alto|Ingreso=20, Saldo=5) = (4/7)(1/4)/(4/7)(1/4)+(3/7)(0/3)= **1**
+      - ** P(C=alto|Ingreso=20, Saldo=5) = (4/7)(1/4)/(4/7)(1/4)+(3/7)(0/3)= 1**
       - P(C=bajo|Ingreso=20, Saldo=5) = (3/7)(1/3)/(4/7)(0/4)+(3/7)(1/3)= 0
 
 El resultado sería:
