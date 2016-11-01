@@ -164,6 +164,43 @@ Queremos predecir
 |30|40|?|
 |20|05|?|
 
+  * P(C | Ingreso, Saldo) = P( C )*P(Ingreso,Saldo|C) / P(Ingreso,Saldo)
+  * N = 7
+  * 1 Probabilidad de la clase
+    + Pr(C=alto)= 4/7 y Pr(C=bajo)= 3/7, la suma debe ser 1.
+  * 2 Probabilidad de las variables, dada la clase.
+    + Ingreso=20,Saldo=10:
+      - Pr(Ingreso=20,Saldo=10|c=alto)=2/4
+      - Pr(X1=20,X2=10|C=bajo)= 1/4
+    + Ingreso=30,Saldo=40:
+      - Pr(Ingreso=30,Saldo=40|c=alto)=0/4
+      - Pr(Ingreso=30,Saldo=40|C=bajo)= 1/3
+    + Ingreso=20,Saldo=5:
+      - Pr(Ingreso=20,Saldo=5|c=alto)=1/4
+      - Pr(Ingreso=20,Saldo=5|C=bajo)= 0/3
+  * 3 Probabilidad total
+    + Pr(Ingreso=20, Saldo|C=alto=10) + Pr(Ingreso=20, Saldo=10|C=bajo)=(4/7)(2/4) + (3/7)(1/3) = 0.428571429
+    + Pr(Ingreso=30, Saldo|C=alto=40) + Pr(Ingreso=30, Saldo=40|C=bajo)=(4/7)(0) + (3/7)(1/3) = 0.142857143
+    + Pr(Ingreso=20, Saldo|C=alto=5) + Pr(Ingreso=20, Saldo=5|C=bajo)=(4/7)(1/4) + (3/7)(0) = 0.142857143
+    
+  * Aplicando la fórmula P(C | Ingreso, Saldo) = P( C )*P(Ingreso,Saldo|C) / P(Ingreso,Saldo)
+    + Ingreso=20,Saldo=10:
+      - P(C=alto|Ingreso=20, Saldo=10) = (4/7)(2/4)/(4/7)(2/4)+(3/7)(1/3)= **0.666666667**
+      - P(C=bajo|Ingreso=20, Saldo=10) = (3/7)(1/3)/(4/7)(2/4)+(3/7)(1/3)= 0.333333333
+    + Ingreso=30,Saldo=40:
+      - P(C=alto|Ingreso=30, Saldo=40) = (4/7)(0/4)/(4/7)(0/4)+(3/7)(1/3)= 0
+      - P(C=bajo|Ingreso=30, Saldo=40) = (3/7)(1/3)/(4/7)(0/4)+(3/7)(1/3)= **1**
+    + Ingreso=20,Saldo=5:
+      - P(C=alto|Ingreso=20, Saldo=5) = (4/7)(1/4)/(4/7)(1/4)+(3/7)(0/3)= **1**
+      - P(C=bajo|Ingreso=20, Saldo=5) = (3/7)(1/3)/(4/7)(0/4)+(3/7)(1/3)= 0
+
+El resultado sería:
+|Ingreso|Saldo|Clase|
+|---|---|---|
+|20|10|alto|
+|30|40|bajo|
+|20|05|alto|
+
 ### Ejercicios - Casos Contraintuitivos de la Probabilidad
  * **Película "Rosencrantz y Guildenstern han muerto"**
   - En la escena que abre la película, Rosencrantz va lanzando monedas al aire.
