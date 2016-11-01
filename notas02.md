@@ -152,6 +152,7 @@ Tomando el ejemplo anterior, qué pasaría si además de Ingreso y Saldo, ¿tuvi
 
   * Para clasificar un nuevo valor
     + C^<-arg max P(C=alto)=Pr(C=alto)∏Pr(Xi_nuevo|C=alto)
+    
 ## Gaussian Naive Bayes
   * Se utiliza para valores continuos.
   * Supone que los datos se distribuyen de acuerdo a una distribución, en base a esto calculamos las probabilidades de clase, generalmente se utiliza la normal.
@@ -159,9 +160,14 @@ Tomando el ejemplo anterior, qué pasaría si además de Ingreso y Saldo, ¿tuvi
     + No da una probabilidad, recordemos que la probabilidad de una variable continua es 0 por definición.
     + Lo que nos da es la **altura** de la función en un punto, para calcular las probabilidades necistaríamos definir una base(para aproximar base * altura)
     + Ejemplo de clasificación de spam de una base de datos de correos.
-      - Recordemos que suponemos independiencia condicional, Pr(C=Spam|A1...An)=Pr(C=Spa,)∏Pr(Xi|C=alto), pero es mucho mas fácil para la computadora(y para nosotros) utilizar logaritmo, por que aplicando logaritmo la multiplicación se convierte en sumatoria:
-      - Pr(C=Spam|A1, A2,...,An)= Log(C=Spam) + ∑log(Pr(Ai|C=Spam))
-      - Pr(C= NoSpam|A1, A2,...,An)= Log(C=NoSpam) + ∑log(Pr(Ai|C=NoSpam))
+      - Paso 1 - Obtenemos la media (p) y la desviación estándar(st) de los datos.
+      - Paso 2 - Recordemos que suponemos independiencia condicional, Pr(C=Spam|A1...An)=Pr(C=Spa,)∏Pr(Xi|C=alto), pero es mucho mas fácil para la computadora(y para nosotros) utilizar logaritmo, por que aplicando logaritmo la multiplicación se convierte en sumatoria:
+        - Pr(C=Spam|A1, A2,...,An)= Log(C=Spam) + ∑log(Pr(Ai|C=Spam))
+        - Pr(C= NoSpam|A1, A2,...,An)= Log(C=NoSpam) + ∑log(Pr(Ai|C=NoSpam))
+      - Paso 3 - Para predecir si es Spam o no, nos falta utilizamos la función de densidad de la normal para realizar el cálculo:
+        - Pr(X|C) = arg max Log(C) + ∑log( fd_normal( p,st, Pr(Ai|C))
+        
+
 
 ## Material Adicional
   * [Andrew Moore's Basic Probability Tutorial](http://www.autonlab.org/tutorials/prob.html)
