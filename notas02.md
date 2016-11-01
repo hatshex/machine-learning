@@ -1,3 +1,9 @@
+## Repaso de probabilidad
+ * Teorema de Bayes
+ * Estmicación de parámetros
+  + Estimador de máxima verosimilitud
+  + Máximo a posteriori (MAP)
+  
 ## Predicción Probabilística
 ### Modelos predictivos basados en probabilidades
 Son efectibvs en una gran cantidad de casos.
