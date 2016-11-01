@@ -124,4 +124,5 @@ El resultado sería:
    + **_*¡Error!*_** Es posible que, en la población conjunta, la ratio vaya a la inversa.
 
 ## Material Adicional
-  *[Andrew Moore's Basic Probability Tutorial](http://www.autonlab.org/tutorials/prob.html)
+  * [Andrew Moore's Basic Probability Tutorial](http://www.autonlab.org/tutorials/prob.html)
+  * [Bishop: Pattern Recognition and Machine Learning: Ch. 1 thru 1.2.3, Ch 2 thru 2.2](https://drive.google.com/file/d/0B60o2E1S5j6rTVl2WlJsa09WTDQ/view?usp=sharing)
