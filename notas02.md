@@ -118,4 +118,4 @@ El resultado sería:
    + **_*¡Error!*_** Es posible que, en la población conjunta, la ratio vaya a la inversa.
 
 ## Material Adicional
-  *(Andrew Moore's Basic Probability Tutorial)[http://www.autonlab.org/tutorials/prob.html]
+  *[Andrew Moore's Basic Probability Tutorial](http://www.autonlab.org/tutorials/prob.html)
