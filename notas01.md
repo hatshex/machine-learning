@@ -195,6 +195,7 @@ Queremos predecir
       - P(C=bajo|Ingreso=20, Saldo=5) = (3/7)(1/3)/(4/7)(0/4)+(3/7)(1/3)= 0
 
 El resultado sería:
+
 |Ingreso|Saldo|Clase|
 |---|---|---|
 |20|10|alto|
