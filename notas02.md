@@ -32,10 +32,6 @@ Son efectivoss en una gran cantidad de casos.
    - El divisor es el mismo para todos los valores de C, por lo cual para encontrar el valor de C que maximiza la probabilidad podemos prescindir de la división.
    - Y ahora suponemos independencia (condicionada a la clase).
    - Pr(A1 . . .An|C) ∗ Pr(C) = Pr(A1|C) ∗ . . . ∗ Pr(An|C) ∗ Pr(C)
- + **Dificultades del método**:
-   - El número de ejemplos necesarios crece muy rápido con el número de atributos
-   - No esta definido para atributos que no se encuentran en el conjunto de entrenamiento. 
-   - La estimación de probabilidad que se mencionó no sirve para variables contínuas
  + **Ejemplo**:
    - Supongamos ahora que lo que tenemos es una base de datos de clientes de un banco y deseamos un  modelo para determinar si un cliente nuevo es de alto o bajo riesgo para un préstamo 
    - Supongamos que las variables de interés son la ingreso mensual y su saldo actual
@@ -126,7 +122,13 @@ El resultado sería:
 ## Naive Bayes - Bayes ingenuo discreto
   * Supuesto: 
     + Las probabilidades de clase son independientes.
-    + Supone que todos los atributos son independientes conocida la variable clase
+    + Supone que todos los atributos son independientes conocida la variable clase.
+    
+  * **Dificultades del método**:
+    + El número de ejemplos necesarios crece muy rápido con el número de atributos
+    + No esta definido para atributos que no se encuentran en el conjunto de entrenamiento. 
+    + La estimación de probabilidad que se mencionó no sirve para variables contínuas
+    
 Tomando el ejemplo anterior, qué pasaría si además de Ingreso y Saldo, ¿tuviéramos más atributos?, probabilidad de la clase la calcularíamos como: 
   * Pr(C=alto|X1...Xn)=Pr(C=alto)Pr(X1|C=alto)....Pr(Xn|C=alto)
   * Asumiendo independencia condicional
@@ -136,16 +138,31 @@ Tomando el ejemplo anterior, qué pasaría si además de Ingreso y Saldo, ¿tuvi
     + P(C=bajo|Ingreso=30, Saldo=5)= Pr(C=bajo)Pr(Ingreso=30|C=bajo)Pr(Saldo=5|C=bajo)= (3/7)(1/3)(0)=0
     + P(C=alto|Ingreso=20, Saldo=10)= Pr(C=alto)Pr(Ingreso=20|C=alto)Pr(Saldo=10|C=alto)= 0.3214286
     + P(C=bajo|Ingreso=20, Saldo=10)= Pr(C=bajo)Pr(Ingreso=20|C=bajo)Pr(Saldo=10|C=bajo)= (3/7)(1/3)(1/3)=0.04761905
-    Algunos valores no existen en el set de datos actual, por lo que su probabilidad nos da 0, para mitigar este punto usamos el Suavizamiento de Laplace:
+
+### Algunos valores no existen en el set de datos actual, por lo que su probabilidad nos da 0, para mitigar este punto usamos el Suavizamiento de Laplace:
     + Sumar un término en el numerador y en el denominador
     + P^(C)= (|C|+1)/(numdatos + numCat)
       - donde C es una categoría y |C| es el número de datos con categoría C.
+      - Ejemplo: 
+        + P(C=alto)= 4 + 1 / 7 + 1 * 2 =0.5556
+        + P(C=bajo)= 3 + 1 / 7 + 1 * 2= 0.4444
+        
     + P^(x|C)= (1+|x^C|)/(|C|+unique(C))
       - donde |x^C| es el número de veces que x tiene una categoría C y unique(C) es el número de datos diferentes con categoría C.
 
   * Para clasificar un nuevo valor
     + C^<-arg max P(C=alto)=Pr(C=alto)∏Pr(Xi_nuevo|C=alto)
 ## Gaussian Naive Bayes
+  * Se utiliza para valores continuos.
+  * Supone que los datos se distribuyen de acuerdo a una distribución, en base a esto calculamos las probabilidades de clase, generalmente se utiliza la normal.
+  * Se utiliza la función de densidad.
+    + No da una probabilidad, recordemos que la probabilidad de una variable continua es 0 por definición.
+    + Lo que nos da es la **altura** de la función en un punto, para calcular las probabilidades necistaríamos definir una base(para aproximar base * altura)
+    + Ejemplo de clasificación de spam de una base de datos de correos.
+      - Recordemos que suponemos independiencia condicional, Pr(C=Spam|A1...An)=Pr(C=Spa,)∏Pr(Xi|C=alto), pero es mucho mas fácil para la computadora(y para nosotros) utilizar logaritmo, por que aplicando logaritmo la multiplicación se convierte en sumatoria:
+      - Pr(C=Spam|A1, A2,...,An)= Log(C=Spam) + ∑log(Pr(Ai|C=Spam))
+      - Pr(C= NoSpam|A1, A2,...,An)= Log(C=NoSpam) + ∑log(Pr(Ai|C=NoSpam))
+
 ## Material Adicional
   * [Andrew Moore's Basic Probability Tutorial](http://www.autonlab.org/tutorials/prob.html)
   * [Bishop: Pattern Recognition and Machine Learning: Ch. 1 thru 1.2.3, Ch 2 thru 2.2](https://drive.google.com/file/d/0B60o2E1S5j6rTVl2WlJsa09WTDQ/view?usp=sharing)
