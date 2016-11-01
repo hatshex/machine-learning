@@ -1,7 +1,7 @@
 ## Repaso de probabilidad
  * Teorema de Bayes
  * Estmicación de parámetros
-  + Estimador de máxima verosimilitud
+  + Estimador de máxima verosimilitud(MLE)
   + Máximo a posteriori (MAP)
   
 ## Predicción Probabilística
